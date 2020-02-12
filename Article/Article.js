@@ -85,6 +85,20 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'How to Live Forever',
+    date: 'Mar 22nd, 2020',
+    firstParagraph: `LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem v LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem`,
+
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
+          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
+          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
 
@@ -112,3 +126,47 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function createArticle (title, date, firstParagraph, secondParagraph, thirdParagraph) {
+  const article = document.createElement('div');
+  const articleTitle = document.createElement('h2');
+  const articleDate = document.createElement('p');
+  const articlePara1 = document.createElement('p');
+  const articlePara2 = document.createElement('p');
+  const articlePara3 = document.createElement('p');
+  const articleButton = document.createElement('span');
+  const buttonOpen = document.createElement('button');
+
+  articles.appendChild(article);
+  article.appendChild(articleTitle);
+  article.appendChild(articleDate);
+  article.appendChild(articlePara1);
+  article.appendChild(articlePara2);
+  article.appendChild(articlePara3);
+  article.appendChild(articleButton);
+  articleButton.appendChild(buttonOpen);
+
+  article.classList.add('article');
+  articleDate.classList.add('date');
+  articleButton.classList.add('expandButton');
+  buttonOpen.classList.add('article-open');
+
+  articleTitle.textContent = title;
+  articleDate.textContent = date;
+  articlePara1.textContent = firstParagraph;
+  articlePara2.textContent = secondParagraph;
+  articlePara3.textContent = thirdParagraph;
+  articleButton.textContent = 'expand', firstParagraph, secondParagraph, thirdParagraph;
+
+  articleButton.addEventListener('click', (event) => {
+    article.classList.toggle('article-open');
+  })
+
+  return article
+}
+
+const articles = document.querySelector('.articles');
+
+data.map(items => {
+  articles.appendChild(createArticle(items.title, items.date, items.firstParagraph, items.secondParagraph, items.thirdParagraph))
+});
