@@ -85,30 +85,92 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'How to Live Forever in Code',
+    date: 'Mar 22nd, 2020',
+    firstParagraph: `LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem v LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem`,
+
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
+          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
+          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Using Code to Solve World Problems',
+    date: 'Sept 30th, 2020',
+    firstParagraph: `LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem v LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem`,
+
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
+          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
+          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Making Christmas styled Code',
+    date: 'Dec 25th, 2020',
+    firstParagraph: `LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem v LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem LoremLoremLorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Loremv Lorem Lorem Lorem Lorem Lorem Lorem`,
+
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
+          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
+          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
 
-/* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
-  
-  <div class="article">
-    <h2>{title of the article}</h2>
-    <p class="date">{date of the article}</p>
 
-    {three separate paragraph elements}
+function createArticle (title, date, firstParagraph, secondParagraph, thirdParagraph) {
+  const article = document.createElement('div');
+  const articleTitle = document.createElement('h2');
+  const articleDate = document.createElement('p');
+  const articlePara1 = document.createElement('p');
+  const articlePara2 = document.createElement('p');
+  const articlePara3 = document.createElement('p');
+  const articleButton = document.createElement('span');
+  const buttonOpen = document.createElement('button');
 
-    <span class='expandButton'></span>
-  </div>
+  articles.appendChild(article);
+  article.appendChild(articleTitle);
+  article.appendChild(articleDate);
+  article.appendChild(articlePara1);
+  article.appendChild(articlePara2);
+  article.appendChild(articlePara3);
+  article.appendChild(articleButton);
+  articleButton.appendChild(buttonOpen);
 
-  Hint: You will need to use createElement more than once here!
+  article.classList.add('article');
+  articleDate.classList.add('date');
+  articleButton.classList.add('expandButton');
+  buttonOpen.classList.add('article-open');
 
-  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
+  articleTitle.textContent = title;
+  articleDate.textContent = date;
+  articlePara1.textContent = firstParagraph;
+  articlePara2.textContent = secondParagraph;
+  articlePara3.textContent = thirdParagraph;
+  articleButton.textContent = 'EXPAND ', firstParagraph, secondParagraph, thirdParagraph;
 
-  Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
+  articleButton.addEventListener('click', (event) => {
+    article.classList.toggle('article-open');
+  })
 
-  Step 3: return the entire component.
+  return article
+}
 
-  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
+const articles = document.querySelector('.articles');
 
-  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
-
-*/
+data.map(items => {
+  articles.appendChild(createArticle(items.title, items.date, items.firstParagraph, items.secondParagraph, items.thirdParagraph))
+});
